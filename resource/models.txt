@@ -1,0 +1,9 @@
+//ProductType.cs
+using System.ComponentModel.DataAnnotations;
+public class ProductType
+    {
+       [key]
+        public int Pk_ProdTypeId { get; set; }
+        public string Description { get; set; }
+
+    }

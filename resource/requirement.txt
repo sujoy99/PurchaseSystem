@@ -1,0 +1,15 @@
+1. admin
+2. general store
+3. cloth store
+4. using MVC IDENTITY to achive Authorization and Authenticaiton. So, change Authentication to "Individual User Account".
+5. creating Temporary Object-
+
+List<ProducgtType> ProductTypeList = new List<ProductType>()
+{
+       new ProductType(){id=1, description="open"},    
+       new ProductType(){id=2, description="open"}
+};
+
+6. custom route in route.config file (conventional routing)
+7. attribute routing: routes.MapMvcAttributeRoutes(); in route.config file 
+ [Route("ProductType/Product/{min}/{max}")] : for action based routing

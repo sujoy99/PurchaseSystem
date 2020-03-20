@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using PurchaseSystem.Common;
 
 namespace PurchaseSystem.Models
 {
@@ -29,5 +30,7 @@ namespace PurchaseSystem.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<ProductTypeMst> ProductTypeMsts { get; set; }
     }
 }
